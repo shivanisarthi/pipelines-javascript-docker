@@ -1,9 +1,10 @@
 trigger:
 - main
 
+
 variables:
-  dockerRegistryServiceConnection: latest
-  imageRepository: appImage
+  dockerRegistryServiceConnection: '<SERVICE_CONNECTION_NAME>'
+  imageRepository: '<IMAGE_NAME>'
   dockerfilePath: '$(Build.SourcesDirectory)/app/Dockerfile'
   tag: '$(Build.BuildId)'
 
