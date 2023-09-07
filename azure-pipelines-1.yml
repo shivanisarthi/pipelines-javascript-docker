@@ -16,8 +16,8 @@ variables:
   dockerfilePath: '$(Build.SourcesDirectory)/app/Dockerfile'
   tag: '$(Build.BuildId)'
 
-  pool:
-    name: LocalAgentPool
+  # Agent VM image name
+  vmImageName: LocalAgentPool
 
 stages:
 - stage: Build
