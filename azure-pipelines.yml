@@ -30,8 +30,4 @@ stages:
         dockerfile: $(dockerfilePath)
         tags: |
           $(tag)
-
-    - script: |
-        echo "MSI_ENDPOINT: $MSI_ENDPOINT"
-        echo "MSI_SECRET: $MSI_SECRET"
-      displayName: 'Print MSI Environment Variables'          
+     
